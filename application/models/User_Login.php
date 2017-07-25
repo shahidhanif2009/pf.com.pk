@@ -8,13 +8,13 @@ Class User_Login extends CI_Model{
 	{
 
 		//check wether username etc exists or not
-$check = "user_name =" . "'" . $data['user_name'] . "'";
-$this->db->select('*');
-$this->db->from('user_login');
-$this->db->where($check);
-$this->db->limit(1);
-//check if it has only one 
-$query = $this->db->get();
+				$check = "user_name =" . "'" . $data['user_name'] . "'";
+				$this->db->select('*');
+				$this->db->from('user_login');
+				$this->db->where($check);
+				$this->db->limit(1);
+				//check if it has only one 
+				$query = $this->db->get();
 
 
 
